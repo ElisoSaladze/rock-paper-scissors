@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="play">
+        <div>
+            <img src="./assets/Papel.png" alt="hand" />
+            <h1>LET'S PLAY</h1>
+        </div>
+        <h2>PICK AN OPTION</h2>
+        <div>
+            <button class="rock" id="rock" onclick="showResult(this.id)">
+                <img src="./assets/rock.svg" alt="rock" />
+            </button>
+            <button class="paper" id="paper" onclick="showResult(this.id)">
+                <img src="./assets/paper.svg" alt="paper" />
+            </button>
+            <button class="scissors" id="scissors" onclick="showResult(this.id)">
+                <img src="./assets/scissors.svg" alt="scissors" />
+            </button>  
+        </div>
+    </div>
+    <div class="result">
+        <div class="comp-choice"></div>
+        <h2 class="who">...</h2>
+        <button class="play-again" onclick="playAgain()">PLAY AGAIN</button>
+        <div class="user-choice"></div>
+    </div>
+    <script src="main.js" ></script>
+</body>
+</html>

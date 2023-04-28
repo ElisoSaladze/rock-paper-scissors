@@ -1,0 +1,68 @@
+body {
+    height: 100vh; 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    font-size: 1.6em;
+    font-weight: 700;
+}
+h2 {
+    font-size: 1em;
+    font-weight: 400;
+}
+div {
+    text-align: center;
+}
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+button:hover {
+    transform: scale(1.08);
+}
+.play-again {
+    width: 180px;
+    padding: 15px 0;
+    background-color: rgba(156, 39, 176, 1);
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 25px;
+}
+.result {
+    display: none;
+}
+.result img {
+    height: auto;
+    width: 50%;
+}
+.comp-choice {
+    transform: rotate(180deg);
+}
+
+@keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .shake {
+    animation: shake 0.5s;
+  }
+  

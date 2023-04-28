@@ -25,7 +25,7 @@ const findWinner = (user, comp) => {
     }
     setTimeout(() => {
         result.innerHTML = winner;
-    }, 1500);
+    }, 1000);
 };
 
 
@@ -64,7 +64,7 @@ const showResult = (id) => {
     setTimeout(() => {
         findWinner(user, comp);
         compChoice.classList.remove('shake');
-    }, 1500);
+    }, 1000);
 
     starter.style.display = "none";
 }
